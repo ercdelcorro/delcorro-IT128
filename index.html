@@ -220,6 +220,22 @@
         font-weight: 700;
       }
 
+      .photo-wrap {
+        margin-top: 18px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .photo-wrap img {
+        width: min(100%, 260px);
+        height: 260px;
+        object-fit: cover;
+        border-radius: 22px;
+        border: 1px solid var(--border);
+        box-shadow: 0 12px 28px rgba(15, 23, 42, 0.35);
+        background: rgba(15, 23, 42, 0.6);
+      }
+
       @media (max-width: 760px) {
         .hero-card, .info-grid {
           grid-template-columns: 1fr;
@@ -283,6 +299,9 @@
               <li>Email: ercdelc@2026</li>
               <li>Student: Ed Rizz C. Del Corro</li>
             </ul>
+            <div class="photo-wrap">
+              <img src="mypicture.png" alt="Ed Rizz C. Del Corro" />
+            </div>
           </article>
 
           <article class="card">
